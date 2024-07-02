@@ -13,4 +13,4 @@ The third project in the Software Engineer program from Tripleten.
 - Adaptive Design
 - BEM Structure
 
-Click [here](https://github.com/JCDiosMio/se_project_aroundtheus) to view the project
+Click [here](https://jcdiosmio.github.io/se_project_aroundtheus/) to view the project
