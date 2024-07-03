@@ -23,7 +23,7 @@
 }
 
 .profile__name {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 42px;
   line-height: 48px;
   font-weight: 500;
@@ -38,16 +38,16 @@
   height: 24px;
   grid-area: button;
   border: solid 1px #fff;
+  transition: opacity 0.5s ease-in;
   cursor: pointer;
 }
 
 .profile__edit-button:hover {
-  opacity: 70%;
-  transition: opacity 0.5s ease-in;
+  opacity: 60%;
 }
 
 .profile__bio {
-  font-family: Inter, Arial, sans-serif;
+  font-family: "Inter", Arial, sans-serif;
   font-size: 18px;
   line-height: 21.78px;
   font-weight: 400;
@@ -64,12 +64,13 @@
   height: 50px;
   margin-left: auto;
   border: solid 2px #fff;
+  border-radius: 2px;
+  transition: opacity 0.5s ease-in;
   cursor: pointer;
 }
 
 .profile__add-button:hover {
-  opacity: 70%;
-  transition: opacity 0.5s ease-in;
+  opacity: 60%;
 }
 
 @media screen and (max-width: 775px) {
@@ -95,6 +96,11 @@
     max-width: 282px;
     justify-content: center;
     margin: 30px auto;
+  }
+
+  .profile__edit-button {
+    height: 18px;
+    width: 18px;
   }
 
   .profile__add-button {
