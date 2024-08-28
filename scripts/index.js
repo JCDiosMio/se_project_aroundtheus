@@ -52,7 +52,7 @@ function getCardElement(cardData) {
   const cardImageElement = cardElement.querySelector(".card__image");
   const cardTitleElement = cardElement.querySelector(".card__title");
   cardTitleElement.textContent = cardData.name;
-  cardImageElement.content = cardData.link;
+  cardImageElement.src = cardData.link;
   return cardElement;
 }
 
