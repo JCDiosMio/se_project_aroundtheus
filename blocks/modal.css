@@ -1,5 +1,5 @@
 .modal {
-  display: none;
+  display: flex;
   position: fixed;
   top: 0;
   right: 0;
@@ -8,10 +8,15 @@
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 999;
   padding: 19px;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s, opacity 0.3s ease-in;
 }
 
 .modal_opened {
   display: flex;
+  visibility: visible;
+  opacity: 1;
 }
 
 .modal__container {
@@ -30,6 +35,8 @@
   position: relative;
   max-width: 75vw;
   max-height: 75vh;
+  width: auto;
+  height: 100%;
   padding: 0;
   margin: auto;
   background-color: transparent;
@@ -40,7 +47,6 @@
   max-width: 100%;
   max-height: 100%;
   object-fit: contain;
-  border-radius: 8px;
 }
 
 .modal__close-button {
