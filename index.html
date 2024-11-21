@@ -31,7 +31,11 @@
             ></button>
             <p class="profile__bio">Explorer</p>
           </div>
-          <button type="button" class="profile__add-button"></button>
+          <button
+            type="button"
+            class="profile__add-button"
+            id="addCardButton"
+          ></button>
         </section>
         <section class="cards page__section">
           <ul class="cards__list"></ul>
@@ -64,9 +68,49 @@
         </form>
       </div>
     </div>
+    <div class="modal" id="card-add-modal">
+      <div class="modal__container">
+        <button class="modal__close-button" id="modal-close-button"></button>
+        <p class="modal__heading">New Place</p>
+        <form class="modal__form" id="add-card-form">
+          <input
+            class="modal__form-input"
+            id="card-title-input"
+            type="text"
+            name="title"
+            placeholder="Title"
+          />
+          <input
+            class="modal__form-input"
+            id="image-link-input"
+            type="url"
+            name="link"
+            placeholder="Image Link"
+          />
+          <button class="modal__form-button">Save</button>
+        </form>
+      </div>
+    </div>
+    <div class="modal" id="preview-image-modal">
+      <div class="modal__image-container">
+        <button
+          class="modal__close-button"
+          type="button"
+          id="modal-image-close-button"
+        ></button>
+        <img
+          class="modal__image-preview"
+          id="image-preview"
+          alt="image-preview"
+        />
+        <p class="modal__image-caption"></p>
+      </div>
+    </div>
+
     <template id="card-template">
       <li class="card">
         <img src="" alt="" class="card__image" />
+        <button type="button" class="card__button-delete"></button>
         <div class="card__content">
           <h2 class="card__title"></h2>
           <button type="button" class="card__button-like"></button>
