@@ -49,7 +49,7 @@
   object-fit: contain;
 }
 
-.modal__close-button {
+.modal__close {
   position: absolute;
   bottom: calc(100% + 5px);
   left: calc(100% + 5px);
@@ -64,7 +64,7 @@
   transition: opacity 0.5s ease-in;
 }
 
-.modal__close-button:hover {
+.modal__close:hover {
   opacity: 60%;
 }
 

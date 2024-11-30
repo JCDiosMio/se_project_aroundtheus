@@ -47,9 +47,9 @@
     </div>
     <div class="modal" id="profile-edit-modal">
       <div class="modal__container">
-        <button class="modal__close-button" id="modal-close-button"></button>
+        <button class="modal__close"></button>
         <p class="modal__heading">Edit profile</p>
-        <form class="modal__form">
+        <form class="modal__form" name="profile-edit-form">
           <input
             class="modal__form-input"
             id="profile-name-input"
@@ -70,9 +70,9 @@
     </div>
     <div class="modal" id="card-add-modal">
       <div class="modal__container">
-        <button class="modal__close-button" id="modal-close-button"></button>
+        <button class="modal__close"></button>
         <p class="modal__heading">New Place</p>
-        <form class="modal__form" id="add-card-form">
+        <form class="modal__form" name="add-card-form">
           <input
             class="modal__form-input"
             id="card-title-input"
@@ -93,11 +93,7 @@
     </div>
     <div class="modal" id="preview-image-modal">
       <div class="modal__image-container">
-        <button
-          class="modal__close-button"
-          type="button"
-          id="modal-image-close-button"
-        ></button>
+        <button class="modal__close" type="button"></button>
         <img
           class="modal__image-preview"
           id="image-preview"
