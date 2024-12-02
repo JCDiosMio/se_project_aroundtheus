@@ -136,10 +136,6 @@ addCardButton.addEventListener("click", function () {
   openModal(addCardModal);
 });
 
-previewImageModalCloseButton.addEventListener("click", () =>
-  closeModal(previewImageModal)
-);
-
 profileEditForm.addEventListener("submit", handleEditProfileSubmit);
 
 addCardForm.addEventListener("submit", handleAddCardSubmit);

@@ -110,17 +110,24 @@
   opacity: 60%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 550px) {
   .modal__container {
     padding: 22px;
   }
 
-  .modal__close-button {
+  .modal__close {
     width: 26px;
     height: 26px;
     left: unset;
     right: 0;
     bottom: calc(100% + 18px);
+  }
+
+  .modal__close_type_image-modal {
+    width: 30px;
+    height: 30px;
+    bottom: calc(100% + 5px);
+    left: calc(100% + 5px);
   }
 
   .modal__heading {
