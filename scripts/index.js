@@ -32,7 +32,7 @@ const initialCards = [
 ];
 
 //modals (popups)
-const modal = document.querySelectorAll(".modal");
+
 const profileEditModal = document.querySelector("#profile-edit-modal");
 const profileEditForm = document.forms["profile-edit-form"];
 const profileNameInput = document.querySelector("#profile-name-input");
