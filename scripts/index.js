@@ -56,7 +56,7 @@ const profileName = document.querySelector(".profile__name");
 const profileBio = document.querySelector(".profile__bio");
 const profileEditButton = document.querySelector("#profile-edit-button");
 const addCardButton = document.querySelector("#addCardButton");
-const closeButton = document.querySelectorAll(".modal__close");
+const closeButtons = document.querySelectorAll(".modal__close");
 
 //functions
 
