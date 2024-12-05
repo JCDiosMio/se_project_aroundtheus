@@ -95,7 +95,7 @@ function renderCard(cardData, cardList) {
 
 initialCards.forEach((cardData) => renderCard(cardData, cardList));
 
-closeButton.forEach((button) => {
+closeButtons.forEach((button) => {
   const modal = button.closest(".modal");
   button.addEventListener("click", () => closeModal(modal));
 });
